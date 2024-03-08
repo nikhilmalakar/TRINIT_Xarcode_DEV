@@ -15,6 +15,7 @@ const tutorSchema = new mongoose.Schema({
   },
   email: {
     type: String,
+    unique: true,
     required: true,
   },
   password: {
@@ -69,6 +70,11 @@ const tutorSchema = new mongoose.Schema({
       {
         startTime: { type: String, required: true },
         endTime: { type: String, required: true },
+        studentID: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Student",
+          required: true,
+        },
       },
     ],
   },
@@ -88,4 +94,4 @@ const tutorSchema = new mongoose.Schema({
 
 const Tutor = mongoose.model("Tutor", tutorSchema);
 
-module.exports = Tutor;
+export default Tutor;

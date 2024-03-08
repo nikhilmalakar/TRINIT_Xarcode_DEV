@@ -1,6 +1,10 @@
 import mongoose from 'mongoose';
 
 const flashCardSchema = new mongoose.Schema({
+    title:{
+        type: String,
+        required: true
+    },
     data: {
         type: String,
         required: true
@@ -17,4 +21,4 @@ const flashCardSchema = new mongoose.Schema({
 
 const FlashCard = mongoose.model('FlashCard', flashCardSchema);
 
-module.exports = FlashCard;
+export default FlashCard;

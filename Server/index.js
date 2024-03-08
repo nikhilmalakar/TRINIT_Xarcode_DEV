@@ -1,16 +1,35 @@
-import express from 'express';
-import dotenv from 'dotenv';
-
-
-dotenv.config();
+import express from "express";
+// import mongoose from "mongoose";
+import dotenv from "dotenv";
+import dbConnect from "./config/database.js";
+import authenticateToken from "./middleware/authMiddleware.js";
+import cookieParser from "cookie-parser";
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get('/', (req, res) => {
-    res.send('Hello, World!');
+dotenv.config();
+
+
+// Database connection
+dbConnect();
+
+// Middleware
+app.use(express.json());
+app.use(cookieParser());
+app.use(authenticateToken);
+
+
+// Routes
+app.get("/", (req, res) => {
+  res.send("Hello, world!");
 });
 
+
+
+
+
+// Start the server
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port ${port}`);
 });

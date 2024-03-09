@@ -24,7 +24,7 @@ app.use(authenticateToken);
 import studentRoutes from "./routes/studentRoutes.js";
 import tutorRoutes from "./routes/tutorRoutes.js";
 // import testRoutes from "./routes/testRoutes.js";
-// import languageRoutes from "./routes/languageRoutes.js";
+import languageRoutes from "./routes/languageRoutes.js";
 // import flashcardRoutes from "./routes/flashcardRoutes.js";
 
 
@@ -32,7 +32,7 @@ import tutorRoutes from "./routes/tutorRoutes.js";
 app.use("/student", studentRoutes);
 app.use("/tutor", tutorRoutes);
 // app.use("/test", testRoutes);
-// app.use("/language", languageRoutes);
+app.use("/language", languageRoutes);
 // app.use("/flashcard", flashcardRoutes);
 
 

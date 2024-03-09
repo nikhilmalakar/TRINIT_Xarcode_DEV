@@ -43,3 +43,12 @@ li {
   color: #323232;
   cursor: pointer;
 }
+
+ 
+.tutor-card{
+  background-image: url(../assets//img/card-1.svg);
+} 
+
+.tutor-clippath{
+  clip-path: url(../src/assets/img/card-1.svg);
+}

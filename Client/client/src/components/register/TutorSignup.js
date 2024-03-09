@@ -37,31 +37,17 @@ const TutorSignup = ({ setLogin, setSignup }) => {
   };
 
   return (
-    <div className="min-h-screen bg-green-900 flex flex-col items-start text-gray-900 antialiased relative">
-      <div
-        style={{
-          clipPath: "polygon(0 0, 100% 0, 100% 80%, 0% 100%)",
-          height: "34rem",
-        }}
-        className="absolute bg-green-800 inset-x-0 top-0"
-      ></div>
-      <div className="mx-auto z-10 mt-48 text-center">
-        <h1 className="text-white text-5xl font-semibold">
-          Welcome to <span className="text-yellow-500">the Club</span>
-        </h1>
-        <p className="text-green-200 mt-2">
-          Become a new member in 3 easy steps
-        </p>
-      </div>
-      <div className="max-w-xl w-full mt-24 mb-24 rounded-lg shadow-2xl bg-white mx-auto overflow-hidden z-10">
-        <div className="px-16 py-10">
+    <div className="min-h-scree flex flex-col items-start text-gray-900 antialiased relative">
+      
+      <div className="max-w-xl w-full rounded-lg shadow-2xl bg-[#2e4057] mx-auto overflow-hidden z-10">
+        <div className="px-12 py-8">
           <form onSubmit={handleSubmit}>
 
             {formStep === 0 && <section>
-              <h2 className="font-semibold text-3xl mb-8">
+              <h2 className="font-semibold text-3xl mb-8 text-center text-white">
                 Personal Information
               </h2>
-              <label htmlFor="name">Your Name</label>
+              <label className="text-white pt-1"  htmlFor="name">Your Name</label>
               <input
                 type="text"
                 id="name"
@@ -70,7 +56,7 @@ const TutorSignup = ({ setLogin, setSignup }) => {
                 value={formData.name}
                 onChange={handleInputChange}
               />
-              <label htmlFor="age">Age</label>
+              <label className="text-white pt-1"  htmlFor="age">Age</label>
               <input
                 type="number"
                 id="age"
@@ -79,7 +65,7 @@ const TutorSignup = ({ setLogin, setSignup }) => {
                 value={formData.age}
                 onChange={handleInputChange}
               />
-              <label htmlFor="email">Email</label>
+              <label className="text-white pt-1"  htmlFor="email">Email</label>
               <input
                 type="email"
                 id="email"
@@ -88,7 +74,7 @@ const TutorSignup = ({ setLogin, setSignup }) => {
                 value={formData.email}
                 onChange={handleInputChange}
               />
-              <label htmlFor="password">Password</label>
+              <label className="text-white pt-1"  htmlFor="password">Password</label>
               <input
                 type="password"
                 id="password"
@@ -97,7 +83,7 @@ const TutorSignup = ({ setLogin, setSignup }) => {
                 value={formData.password}
                 onChange={handleInputChange}
               />
-              <label htmlFor="confirmPassword">Confirm Password</label>
+              <label className="text-white pt-1"  htmlFor="confirmPassword">Confirm Password</label>
               <input
                 type="password"
                 id="confirmPassword"
@@ -108,8 +94,8 @@ const TutorSignup = ({ setLogin, setSignup }) => {
               />
             </section>}
             {formStep === 1 && <section>
-              <h2 className="font-semibold text-2xl mb-8">Experience and Availability</h2>
-              <label htmlFor="experience">Years of Experience</label>
+              <h2 className="font-semibold text-2xl mb-8 text-center text-white">Experience and Availability</h2>
+              <label className="text-white pt-1"  htmlFor="experience">Years of Experience</label>
               <input
                 type="text"
                 id="experience"
@@ -118,7 +104,7 @@ const TutorSignup = ({ setLogin, setSignup }) => {
                 value={formData.experience}
                 onChange={handleInputChange}
               />
-              <label htmlFor="startTime">Availability Start Time</label>
+              <label className="text-white pt-1"  htmlFor="startTime">Availability Start Time</label>
               <input
                 type="text"
                 id="startTime"
@@ -127,7 +113,7 @@ const TutorSignup = ({ setLogin, setSignup }) => {
                 value={formData.startTime}
                 onChange={handleInputChange}
               />
-              <label htmlFor="endTime">Availability End Time</label>
+              <label className="text-white pt-1"  htmlFor="endTime">Availability End Time</label>
               <input
                 type="text"
                 id="endTime"
@@ -138,8 +124,8 @@ const TutorSignup = ({ setLogin, setSignup }) => {
               />
             </section>}
             {formStep === 2 && <section>
-              <h2 className="font-semibold text-3xl mb-8">Billing Information</h2>
-              <label htmlFor="accountHolderName">Account Holder Name</label>
+              <h2 className="font-semibold text-3xl mb-8 text-center text-white">Billing Information</h2>
+              <label className="text-white pt-1"  htmlFor="accountHolderName">Account Holder Name</label>
               <input
                 type="text"
                 id="accountHolderName"
@@ -148,7 +134,7 @@ const TutorSignup = ({ setLogin, setSignup }) => {
                 value={formData.accountHolderName}
                 onChange={handleInputChange}
               />
-              <label htmlFor="bankName">Bank Name</label>
+              <label className="text-white pt-1"  htmlFor="bankName">Bank Name</label>
               <input
                 type="text"
                 id="bankName"
@@ -157,7 +143,7 @@ const TutorSignup = ({ setLogin, setSignup }) => {
                 value={formData.bankName}
                 onChange={handleInputChange}
               />
-              <label htmlFor="accountNumber">Account Number</label>
+              <label className="text-white pt-1"  htmlFor="accountNumber">Account Number</label>
               <input
                 type="text"
                 id="accountNumber"
@@ -166,7 +152,7 @@ const TutorSignup = ({ setLogin, setSignup }) => {
                 value={formData.accountNumber}
                 onChange={handleInputChange}
               />
-              <label htmlFor="bankIFSCCode">Bank IFSC Code</label>
+              <label className="text-white pt-1"  htmlFor="bankIFSCCode">Bank IFSC Code</label>
               <input
                 type="text"
                 id="bankIFSCCode"
@@ -187,7 +173,7 @@ const TutorSignup = ({ setLogin, setSignup }) => {
                 <button
                   onClick={completeForm}
                   type="button"
-                  className="mt-6 bg-green-600 text-white rounded px-8 py-6 w-full disabled:bg-gray-400 disabled:cursor-not-allowed"
+                  className="mt-6 bg-[#5bbcde] text-[#2e4057] font-bold rounded px-8 py-4 w-full disabled:bg-gray-400 disabled:cursor-not-allowed"
                 >
                   Next 
                 </button>
@@ -197,14 +183,14 @@ const TutorSignup = ({ setLogin, setSignup }) => {
                 <button
                   onClick={handleSubmit}
                   type="button"
-                  className="mt-6 bg-green-600 text-white rounded px-8 py-6 w-full disabled:bg-gray-400 disabled:cursor-not-allowed"
+                  className="mt-6 bg-[#5bbcde] text-[#2e4057] font-bold rounded px-8 py-4 w-full disabled:bg-gray-400 disabled:cursor-not-allowed"
                 >
                   Create Account
                 </button>
               </div>
             )}
             {formStep !== 3 && (
-              <p onClick={() => { setLogin(); setSignup(); }}> Already have an account </p>
+              <p  className="cursor-pointer text-center text-xs mt-5 text-gray-400" onClick={() => { setLogin(); setSignup(); }}> Already have an account </p>
             )}
 
 

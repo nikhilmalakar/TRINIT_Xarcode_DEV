@@ -8,6 +8,9 @@ const giveTest = async (req, res) => {
         const student = await Student.findById(id);
         const test = await Test.findById(tid);
 
+        test.testTaken = true;
+        await test.save();
+        
         const {q1,q2,q3,q4,q5} = req.body;
         const myoptions = [
             {questionNo: 1, selectedOption: q1},

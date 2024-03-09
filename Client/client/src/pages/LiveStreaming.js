@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { ZegoUIKitPrebuilt } from '@zegocloud/zego-uikit-prebuilt';
+import './OneToOne.css';
 
 function randomID(len) {
   let result = '';

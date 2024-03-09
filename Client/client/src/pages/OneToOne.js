@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { ZegoUIKitPrebuilt } from '@zegocloud/zego-uikit-prebuilt';
+import './OneToOne.css'
 
 function randomID(len) {
   let result = '';
@@ -52,7 +53,7 @@ export default function OneToOne() {
     <div
       className="myCallContainer"
       ref={myMeeting}
-      style={{ width: '50vw', height: '50vh' }}
+      // style={{ width: '50vw', height: '50vh' }}
     ></div>
   );
 }

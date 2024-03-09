@@ -14,6 +14,8 @@ import StudentLogin from './components/register/StudentLoginModal.js';
 import Home2 from './pages/Home2.js';
 import TopTutors from './components/TopTutors.js';
 
+
+
 function App() {
   return (
     <div className="min-h-full h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">

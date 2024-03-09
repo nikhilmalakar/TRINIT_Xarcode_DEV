@@ -1,0 +1,7 @@
+
+.myCallContainer{
+    margin-left: -300px !important;
+    width: 65vw !important; 
+    height: auto !important;
+    overflow: hidden !important;
+}

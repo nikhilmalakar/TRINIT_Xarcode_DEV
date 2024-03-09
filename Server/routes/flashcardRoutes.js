@@ -10,7 +10,7 @@ import {deleteFlashCard} from '../controllers/flashcard/deleteFlashCard.js';
 import {updateFlashCard} from '../controllers/flashcard/updateFlashCard.js';
 
 router.get('/getFlashCards', getFlashCards);
-router.post('/addFlashCard/:id/:lid/:tid', addFlashCard);
+router.post('/addFlashCard/:id/:lid', addFlashCard);
 router.delete('/deleteFlashCard/:id', deleteFlashCard);
 router.put('/updateFlashCard/:id', updateFlashCard);
 

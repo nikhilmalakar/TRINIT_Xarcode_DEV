@@ -1,7 +1,7 @@
 import FlashCard from '../../models/FlashCard.js';
 
 const addFlashCard = async (req, res) => {
-    const { id, lid, tid } = req.params;
+    const { id, lid} = req.params;
     const { title, data } = req.body;
 
     const newFlashCard = new FlashCard({
@@ -9,7 +9,6 @@ const addFlashCard = async (req, res) => {
         data,
         studentID: id,
         languageID: lid,
-        tutorID: tid
     });
 
     try {

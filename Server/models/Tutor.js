@@ -57,6 +57,12 @@ const tutorSchema = new mongoose.Schema({
       ref: "Subscription",
     },
   ],
+  tests:[
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Test",
+    }
+  ],
   availability: {
     startTime: { 
         type: String, 
@@ -78,17 +84,19 @@ const tutorSchema = new mongoose.Schema({
       },
     ],
   },
-  accountNumber: {
-    type: String,
-    required: true,
-  },
-  accountHolder: {
-    type: String,
-    required: true,
-  },
-  IFSC: {
-    type: String,
-    required: true,
+  bankDetails: {
+    accountNumber: {
+      type: String,
+      required: true,
+    },
+    accountHolderName: {
+      type: String,
+      required: true,
+    },
+    IFSCCode: {
+      type: String,
+      required: true,
+    },
   },
 });
 

@@ -6,6 +6,7 @@ const login = async (req, res) => {
     try {
         const { email, password } = req.body;
         if (!email || !password) {
+          // res.json({ message: "Fill all the details" });
           return res.redirect(
             "/tutor/login?errorMessage=" +
               encodeURIComponent("Fill all the details")
@@ -14,6 +15,7 @@ const login = async (req, res) => {
         
         const existingTutor = await Tutor.findOne({ email });
         if (!existingTutor) {
+          // res.json({ message: "Tutor not registered" });
           return res.redirect(
             "/tutor/login?errorMessage=" +
               encodeURIComponent("Tutor not registered")
@@ -37,9 +39,11 @@ const login = async (req, res) => {
                 maxAge: 1000 * 60 * 60 * 24 * 7,
                 });
             console.log("user logged in successfully");
+            // res.json({ message: "Tutor logged in successfully" });
             res.redirect("/");
         }
         else {
+          // res.json({ message: "Incorrect Password" });
           return res.redirect(
             "/tutor/login?errorMessage=" +
               encodeURIComponent("Incorrect Password")

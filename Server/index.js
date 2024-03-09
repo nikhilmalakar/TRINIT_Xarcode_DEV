@@ -26,6 +26,7 @@ import tutorRoutes from "./routes/tutorRoutes.js";
 import testRoutes from "./routes/testRoutes.js";
 import languageRoutes from "./routes/languageRoutes.js";
 import flashcardRoutes from "./routes/flashcardRoutes.js";
+import subscription from "./routes/subscriptionRoutes.js";
 
 
 // Use routes
@@ -34,6 +35,7 @@ app.use("/tutor", tutorRoutes);
 app.use("/test", testRoutes);
 app.use("/language", languageRoutes);
 app.use("/flashcard", flashcardRoutes);
+app.use("/subscription", subscription);
 
 
 // Routes

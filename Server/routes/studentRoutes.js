@@ -26,11 +26,11 @@ router.get("/register",authenticateToken, async(req, res) => {
     }
 });
 
-router.get("/getDetails/:id", getDetails);
+router.get("/getDetails/:id", getDetails); //ok
 router.post("/addSubscription/:id/:sid", addSubscription);
 router.post("/giveTest/:id/:tid", giveTest);
-router.post("/register", register);
-router.post("/login", login);
+router.post("/register", register); //ok
+router.post("/login", login); //ok
 
 export default router;
 

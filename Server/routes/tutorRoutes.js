@@ -10,6 +10,7 @@ import {getDetails} from "../controllers/tutor/getDetails.js";
 import {addCourse} from "../controllers/tutor/addCourse.js";
 import {addTest} from "../controllers/tutor/addTest.js";
 import {addSubscription} from "../controllers/tutor/addSubscription.js";
+import {getTutors} from "../controllers/tutor/getTutors.js";
 
 router.get("/login",authenticateToken, async(req, res) => {
     if (res.locals.user) {
@@ -28,11 +29,12 @@ router.get("/register",authenticateToken, async(req, res) => {
 }
 );
 
-router.get("/getDetails/:id", getDetails);
-router.post("/addCourse/:id/:lid", addCourse);
-router.post("/addTest/:id/:tid", addTest);
+router.get("/getTutors", getTutors); //ok
+router.get("/getDetails/:id", getDetails); //ok
+router.post("/addCourse/:id/:lid", addCourse); //ok
+router.post("/addTest/:id/:tid", addTest); 
 router.post("/addSubscription/:id/:sid", addSubscription);
-router.post("/register", register);
-router.post("/login", login);
+router.post("/register", register); //ok
+router.post("/login", login); //ok
 
 export default router;

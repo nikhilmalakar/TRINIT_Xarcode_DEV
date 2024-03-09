@@ -6,6 +6,7 @@ const register = async (req, res) => {
     try{
         const {name, age, email, password} = req.body;
         if (!name || !age || !email || !password) {
+            // res.json({ message: "Fill all the details" });
             return res.redirect(
               "/student/register?errorMessage=" +
                 encodeURIComponent("Fill all the details")
@@ -14,6 +15,7 @@ const register = async (req, res) => {
         const existingStudent = await Student.findOne({ email });
         
         if (existingStudent) {
+            // res.json({ message: "Student already registered" });
             return res.redirect(
               "/student/register?errorMessage=" +
                 encodeURIComponent("Student already registered")
@@ -30,6 +32,7 @@ const register = async (req, res) => {
         });
         await newStudent.save();
         console.log("Student registered successfully");
+        // res.json({ message: "Student registered successfully" });
         res.redirect("/student/login");
         
     }

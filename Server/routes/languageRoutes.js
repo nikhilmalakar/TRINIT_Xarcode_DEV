@@ -8,9 +8,9 @@ import {addLanguage} from "../controllers/language/addLanguage.js";
 import {deleteLanguage} from "../controllers/language/deleteLanguage.js";
 import {updateLanguage} from "../controllers/language/updateLanguage.js";
 
-router.get("/getLanguages", getLanguages);
-router.post("/addLanguage", addLanguage);
-router.delete("/deleteLanguage/:id", deleteLanguage);
-router.put("/updateLanguage/:id", updateLanguage);
+router.get("/getLanguages", getLanguages); //ok
+router.post("/addLanguage", addLanguage); //ok
+router.delete("/deleteLanguage/:id", deleteLanguage); //ok
+router.put("/updateLanguage/:id", updateLanguage); //ok
 
 export default router;

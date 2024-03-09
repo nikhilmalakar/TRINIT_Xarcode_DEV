@@ -7,8 +7,8 @@ const createTest = async (req, res) => {
     const languageId = req.params.lid;
 
     const questions = req.body.questions.map(qn => {
-        const { questionno, question, options, correctOption, feedback } = qn;
-        return { questionno,question, options, correctOption, feedback };
+        const { questionno, question, options, correctoption, feedback } = qn;
+        return { questionno,question, options, correctoption, feedback };
     });
     
     const test = new Test({

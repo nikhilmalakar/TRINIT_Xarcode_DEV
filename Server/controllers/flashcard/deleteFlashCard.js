@@ -10,7 +10,7 @@ const deleteFlashCard = async (req, res) => {
                 message: "Flash Card not found" 
             });
         }
-        await card.remove();
+        await card.deleteOne();
         res.status(200).json({ 
             success:true,
             message: "Flash Card deleted successfully" 

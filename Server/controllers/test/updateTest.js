@@ -4,9 +4,9 @@ const updateTest = async (req, res) => {
     const id = req.params.id;
     
     const questions = req.body.questions.map((qn) => {
-      const { questionno, question, options, correctOption, feedback } =
+      const { questionno, question, options, correctoption, feedback } =
         qn;
-      return { questionno,question, options, correctOption, feedback };
+      return { questionno,question, options, correctoption, feedback };
     });
 
     // const test = {
@@ -17,6 +17,7 @@ const updateTest = async (req, res) => {
         await Test.findByIdAndUpdate(
             {_id: id},
             {testdata: questions},
+            
         )
 
         res.status(200).json("Test has been updated");

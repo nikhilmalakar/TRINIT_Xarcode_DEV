@@ -12,10 +12,10 @@ import {deleteSubscription} from "../controllers/subscription/deleteSubscription
 import {updateSubscription} from "../controllers/subscription/updateSubscription.js";
 
 
-router.get("/getSubscription", getSubscription);
-router.get("/getSubscriptionById/:id", getSubscriptionById);
-router.post("/addSubscription/:sid/:tid", addSubscription);
-router.delete("/deleteSubscription/:id", deleteSubscription);
-router.put("/updateSubscription/:id", updateSubscription);
+router.get("/getSubscription", getSubscription); //ok
+router.get("/getSubscriptionById/:id", getSubscriptionById); //ok
+router.post("/addSubscription/:sid/:tid", addSubscription); //ok
+router.delete("/deleteSubscription/:id", deleteSubscription); //ok
+router.put("/updateSubscription/:id", updateSubscription); //ok
 
 export default router;

@@ -10,10 +10,10 @@ import {deleteTest} from "../controllers/test/deleteTest.js";
 import {updateTest} from "../controllers/test/updateTest.js";
 
 
-router.get("/getTests", getTests);
-router.get("/getTest/:id", getTest);
-router.post("/createTest/:sid/:tid/:lid", createTest);
-router.delete("/deleteTest/:id", deleteTest);
-router.put("/updateTest/:id", updateTest);
+router.get("/getTests", getTests); //ok
+router.get("/getTest/:id", getTest); //ok
+router.post("/createTest/:sid/:tid/:lid", createTest); //ok
+router.delete("/deleteTest/:id", deleteTest); //ok
+router.put("/updateTest/:id", updateTest); //ok
 
 export default router;

@@ -7,8 +7,12 @@ import {
 import SignupPage from './pages/register/Signup.js';
 import LoginPage from './pages/register/Login.js';
 import OneToOne from './pages/OneToOne.js';
-import LiveStreaming from './pages/LiveStreaming.js'
-import Notes from './pages/Notes.js'
+import LiveStreaming from './pages/LiveStreaming.js';
+import Notes from './pages/Notes.js';
+import StudentLogin from './pages//StudentLogin.js';
+import StudentSignup from './pages/StudentSignup.js';
+import TutorLogin from './pages/TutorLogin.js';
+import TutorSignup from './pages/TutorSignup.js';
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
             <Route path="/onetoone" element={<OneToOne/>} />
             <Route path="/livestream" element={<LiveStreaming/>} />
             <Route path="/notes" element={<Notes/>} />
+            <Route path="/student/signup" element={<StudentSignup />} />
+            <Route path="/student/login" element={<StudentLogin />} />
+            <Route path="/tutor/signup" element={<TutorSignup />} />
+            <Route path="/tutor/login" element={<TutorLogin />} />
         </Routes>
       </BrowserRouter>
     </div>

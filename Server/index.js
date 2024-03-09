@@ -5,6 +5,7 @@ import authenticateToken from "./middleware/authMiddleware.js";
 import cookieParser from "cookie-parser";
 import mongoose from "mongoose";
 import stripe from "stripe";
+import cors from "cors";
 
 
 const app = express();
@@ -20,6 +21,7 @@ dbConnect();
 app.use(express.json());
 app.use(cookieParser());
 app.use(authenticateToken);
+app.use(cors());
 
 
 // Import routes
@@ -46,7 +48,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("*", (req, res) => {
-  app.redirect("/");
+  res.redirect("/");
 }
 );
 

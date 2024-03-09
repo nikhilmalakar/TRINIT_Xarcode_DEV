@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import OneToOne from './pages/OneToOne.js';
+import LiveStreaming from './pages/LiveStreaming.js';
+import Notes from './pages/Notes.js';
+import StudentLogin from './components/register/StudentLoginModal.js';
+// import StudentSignup from './components/register/StudentSignup.js';
+// import TutorLogin from './components/register/TutorLogin.js';
+// import TutorSignup from './components/register/TutorSignup.js';
+import Home2 from './pages/Home2.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-full h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-md w-full space-y-8">
+     <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home2/>} />
+            <Route path="/onetoone" element={<OneToOne/>} />
+            <Route path="/livestream" element={<LiveStreaming/>} />
+            <Route path="/notes" element={<Notes/>} />
+            {/* <Route path="/student/signup" element={<StudentSignup />} /> */}
+            <Route path="/student/login" element={<StudentLogin />} />
+            {/* <Route path="/tutor/signup" element={<TutorSignup />} /> */}
+            {/* <Route path="/tutor/login" element={<TutorLogin />} /> */}
+        </Routes>
+      </BrowserRouter>
     </div>
+  </div>
   );
 }
 

@@ -12,6 +12,7 @@ import StudentLogin from './components/register/StudentLoginModal.js';
 // import TutorLogin from './components/register/TutorLogin.js';
 // import TutorSignup from './components/register/TutorSignup.js';
 import Home2 from './pages/Home2.js';
+import TopTutors from './components/TopTutors.js';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/notes" element={<Notes/>} />
             {/* <Route path="/student/signup" element={<StudentSignup />} /> */}
             <Route path="/student/login" element={<StudentLogin />} />
+            <Route path="/top-tutor" element={<TopTutors />} />
             {/* <Route path="/tutor/signup" element={<TutorSignup />} /> */}
             {/* <Route path="/tutor/login" element={<TutorLogin />} /> */}
         </Routes>

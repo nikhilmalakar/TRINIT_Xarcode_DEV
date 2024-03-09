@@ -16,6 +16,10 @@ const flashCardSchema = new mongoose.Schema({
     languageID: {
         type: mongoose.Schema.Types.ObjectId,
         required: true
+    },
+    tutorID: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true
     }
 });
 

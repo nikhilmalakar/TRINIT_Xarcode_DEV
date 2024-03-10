@@ -74,3 +74,7 @@ This project was developed as part of a hackathon. We successfully implemented a
 Feel free to explore the code, provide feedback, and contribute to the improvement of LinguaConnect. Happy learning!
 
 **Disclaimer:** This project is a demonstration of skills and creativity in response to the provided problem statement.
+
+## Screenshots
+### Landing Page
+![Landing Page](https://github.com/nikhilmalakar/TRINIT_Xarcode_DEV/blob/main/assets/lc%20landing%201.png)https://github.com/nikhilmalakar/TRINIT_Xarcode_DEV/blob/main/assets/lc%20landing%201.png)

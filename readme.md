@@ -77,7 +77,13 @@ Feel free to explore the code, provide feedback, and contribute to the improveme
 
 ## Screenshots
 ### Landing Page
-![Landing Page 1](https://github.com/nikhilmalakar/TRINIT_Xarcode_DEV/blob/main/assets/lc%20landing%201.png)https://github.com/nikhilmalakar/TRINIT_Xarcode_DEV/blob/main/assets/lc%20landing%201.png)
-![Landing Page 2](https://github.com/nikhilmalakar/TRINIT_Xarcode_DEV/blob/main/assets/lc%20landing%202.png)https://github.com/nikhilmalakar/TRINIT_Xarcode_DEV/blob/main/assets/lc%20landing%202.png)
+![Landing Page 1](https://github.com/nikhilmalakar/TRINIT_Xarcode_DEV/blob/main/assets/lc%20landing%201.png)
+![Landing Page 2](https://github.com/nikhilmalakar/TRINIT_Xarcode_DEV/blob/main/assets/lc%20landing%202.png)
 ![Landing Page 3](https://github.com/nikhilmalakar/TRINIT_Xarcode_DEV/assets/52316115/a798956f-a3a8-4421-8cc2-6aae038f87da)
+
+### Available Courses
+![Available Courses](https://github.com/nikhilmalakar/TRINIT_Xarcode_DEV/blob/main/assets/lc%20available%20courses.png)
+
+### Student Dashboard
+![Student Dashboard](https://github.com/nikhilmalakar/TRINIT_Xarcode_DEV/blob/main/assets/lc%20student%20dashboard.png)
 

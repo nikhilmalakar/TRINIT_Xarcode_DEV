@@ -132,13 +132,14 @@ const Sidebar = ({ user, name }) => {
               selected={selected}
               setSelected={setSelected}
             />
-            {/* <Item
-              title="Add Courses"
-              to={user=='Tutor'?"/tutordash/addcourses":"/studentdash/addcourses"}
+            <Item
+              // onClick={() => window.location.href = "/courses"}
+              title="Explore Courses"
+              to={user=='Tutor'?"/tutordash/addcourses":"/courses"}
               icon={<MenuBookOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            /> */}
+            />
 
             <Typography
               variant="h6"

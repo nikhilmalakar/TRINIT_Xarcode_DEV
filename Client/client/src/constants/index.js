@@ -266,7 +266,7 @@ export const pricing = [
     id: "0",
     title: "Basic Tutoring Package",
     description: "Get personalized tutoring sessions with experienced tutors.",
-    price: "Free",
+    price: "From $80",
     features: [
       "Access to experienced tutors for personalized tutoring sessions",
       "Tailored learning plans to suit your needs",
@@ -279,7 +279,7 @@ export const pricing = [
     id: "1",
     title: "Premium Tutoring Package",
     description: "Get personalized tutoring sessions with experienced tutors.",
-    price: "Free",
+    price: "From $120",
     features: [
       "Access to experienced tutors for personalized tutoring sessions",
       "Tailored learning plans to suit your needs",
@@ -292,7 +292,7 @@ export const pricing = [
     id: "2",
     title: "Enterprise Tutoring Package",
     description: "Get personalized tutoring sessions with experienced tutors.",
-    price: "Free",
+    price: "From $500",
     features: [
       "Access to experienced tutors for personalized tutoring sessions",
       "Tailored learning plans to suit your needs",

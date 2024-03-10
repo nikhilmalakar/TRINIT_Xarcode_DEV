@@ -40,7 +40,7 @@ const CompanyLogos = ({ className }) => {
           </li>
         ))}
       </ul>
-      <p className=" mt-10 text-center">
+      <p className=" mt-10 text-center text-xl">
         {" "}
         We have teachers in over 70 languages!
       </p>

@@ -48,6 +48,16 @@
   background-size: cover;
   background-position: center;
 }
+.top-tutor-img-box:nth-child(6) {
+  background: url(../../assets/img/tutor6.png);
+  background-size: cover;
+  background-position: center;
+}
+.top-tutor-img-box:nth-child(7) {
+  background: url(../../assets/img/tutor7.png);
+  background-size: cover;
+  background-position: center;
+}
 
 .top-tutor-img-box h3 {
   color: white;

@@ -1,0 +1,68 @@
+.top-tutor-container {
+  width: 100%;
+  /* height: 100vh; */
+  /* background: #cdcdcd; */
+  display: flex;
+}
+
+.top-tutor-img-box {
+  width: 6vw;
+  height: 70vh;
+  margin: 10px;
+  border-radius: 50px;
+  /* background: url(../../assets/img/tutor1.png); */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: width 0.5s;
+}
+
+.top-tutor-img-box:nth-child(1) {
+  width: 100px;
+  opacity: 1;
+  background: url(../../assets/img/tutor1.png);
+  background-size: cover;
+  background-position: center;
+}
+.top-tutor-img-box:nth-child(1) h3 {
+  /* bottom: 25px; */
+  /* opacity: 1 ; */
+}
+.top-tutor-img-box:nth-child(2) {
+  background: url(../../assets/img/tutor3.png);
+  background-size: cover;
+  background-position: center;
+}
+.top-tutor-img-box:nth-child(3) {
+  background: url(../../assets/img/tutor2.png);
+  background-size: cover;
+  background-position: center;
+}
+.top-tutor-img-box:nth-child(4) {
+  background: url(../../assets/img/tutor4.png);
+  background-size: cover;
+  background-position: center;
+}
+.top-tutor-img-box:nth-child(5) {
+  background: url(../../assets/img/tutor5.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.top-tutor-img-box h3 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  opacity: 0;
+  transition: bottom 0.5s, width 0.5s;
+}
+
+.top-tutor-img-box:hover {
+  width: 20vw;
+  cursor: pointer;
+}
+.top-tutor-img-box:hover h3 {
+  opacity: 1;
+  bottom: 25px;
+}

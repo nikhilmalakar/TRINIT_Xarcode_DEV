@@ -45,7 +45,7 @@ const login = async (req, res) => {
           // res.json({message:"logged in succesfully"});
           console.log("user logged in successfully");
           // res.redirect("/");
-          return res.json({ token });
+          return res.json({ token, id: existingStudent._id });
         } else {
           // res.json({ message: "Incorrect Password" });
           return res.redirect(

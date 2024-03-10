@@ -268,11 +268,11 @@ export const pricing = [
     description: "Get personalized tutoring sessions with experienced tutors.",
     price: "From $80",
     features: [
-      "Access to experienced tutors for personalized tutoring sessions",
-      "Tailored learning plans to suit your needs",
-      "Interactive sessions to enhance understanding",
-      "Explore the platform and its features at no cost",
-      "24/7 support for any queries or assistance",
+      "Access to certified language tutors for personalized tutoring sessions",
+      "Customized learning plans based on your proficiency level and learning goals",
+      "Interactive sessions focusing on speaking, listening, reading, and writing skills",
+      "Access to a variety of language learning resources including textbooks, audio materials, and online exercises",
+      "Regular progress assessments and feedback from tutors to track your improvement",
     ],
   },
   {
@@ -281,11 +281,11 @@ export const pricing = [
     description: "Get personalized tutoring sessions with experienced tutors.",
     price: "From $120",
     features: [
-      "Access to experienced tutors for personalized tutoring sessions",
-      "Tailored learning plans to suit your needs",
-      "Interactive sessions to enhance understanding",
-      "Explore the platform and its features at no cost",
-      "24/7 support for any queries or assistance",
+      "Unlimited access to highly qualified native-speaking tutors specialized in the target language",
+      "Personalized learning plans designed to target your specific areas of improvement",
+      "Intensive speaking practice sessions with real-time correction and pronunciation guidance",
+      "In-depth cultural insights and language immersion experiences to enhance your understanding",
+      "Additional resources such as language exchange partners and multimedia content to supplement your learning journey",
     ],
   },
   {
@@ -294,14 +294,15 @@ export const pricing = [
     description: "Get personalized tutoring sessions with experienced tutors.",
     price: "From $500",
     features: [
-      "Access to experienced tutors for personalized tutoring sessions",
-      "Tailored learning plans to suit your needs",
-      "Interactive sessions to enhance understanding",
-      "Explore the platform and its features at no cost",
-      "24/7 support for any queries or assistance",
+      "Dedicated language learning support for corporate teams or organizations",
+      "Customized curriculum development tailored to meet the specific language needs of the company",
+      "Group sessions and team-building activities focused on language learning and communication skills",
+      "Access to advanced language training tools and technologies for efficient learning management",
+      "Priority support and dedicated account management to ensure seamless integration and implementation within the organization",
     ],
   },
 ];
+
 
 export const benefits = [
   {

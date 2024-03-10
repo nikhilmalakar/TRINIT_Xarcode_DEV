@@ -66,7 +66,7 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8" href="/">
-          <h1 className=" text-2xl font-bold text-[#5bbcde] transition-colors hover:text-blue-1000">
+          <h1 className=" text-3xl font-bold text-[#5bbcde] transition-colors hover:text-blue-1000">
             LINGUA<span className="text-[#2e4057]">Connect.</span>
           </h1>
         </a>
@@ -84,7 +84,7 @@ const Header = () => {
                 onClick={handleClick}
                 className={`block relative font-code text-xs uppercase text-[#0699cd] transition-colors hover:text-[#0699cd] ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
                   item.url === pathname.hash
                     ? "z-2 lg:text-[#0699cd]"
                     : "lg:text-[#0699cd]"
@@ -102,7 +102,7 @@ const Header = () => {
           <>
             <a
               href="#signup"
-              className="button hidden mr-8 text-[#0699cd] transition-colors hover:text-[#0699cd] lg:block"
+              className="button text-sm hidden mr-8 text-[#0699cd] transition-colors hover:text-[#0699cd] lg:block"
               onClick={() => {
                 setStudentLoginModal(true);
                 signInHandler();
@@ -112,7 +112,7 @@ const Header = () => {
             </a>
 
             <Button
-              className="hidden lg:flex"
+              className="hidden font-semibold lg:flex"
               onClick={() => setTutorSignupModal(true)}
             >
               Become a Tutor

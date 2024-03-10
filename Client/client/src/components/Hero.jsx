@@ -22,15 +22,15 @@ const Hero = () => {
     >
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-          <h1 className="h1 mb-6 ">
-            Elevate Your Language Fluency
+          <h1 className="h1 mb-3 ">
+            Elevate Your <span className="text-[#5bbcde] font-extrabold"> Language</span> Fluency
           
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-grey-300 lg:mb-8">
             "Embark on a Journey to Fluency with Dedicated Language Tutoring
             Services Tailored to Your Learning Style and Goals."
           </p>  
-          <Button href="/pricing" className="w-60 size-3xl">
+          <Button href="/pricing" className="font-semibold w-60">
             Get started
           </Button>
         </div>

@@ -66,8 +66,8 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8" href="/">
-          <h1 className=" text-2xl uppercase text-[#0699cd] transition-colors hover:text-blue-1000">
-            LinguaConnect
+          <h1 className=" text-2xl font-bold text-[#5bbcde] transition-colors hover:text-blue-1000">
+            LINGUA<span className="text-[#2e4057]">Connect.</span>
           </h1>
         </a>
 

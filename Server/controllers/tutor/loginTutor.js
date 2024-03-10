@@ -34,13 +34,14 @@ const login = async (req, res) => {
             existingTutor.token = token;
             existingTutor.password = undefined;
 
-            res.cookie("jwt", token, {
-                httpOnly: true,
-                maxAge: 1000 * 60 * 60 * 24 * 7,
-                });
+            // res.cookie("jwt", token, {
+            //     httpOnly: true,
+            //     maxAge: 1000 * 60 * 60 * 24 * 7,
+            //     });
             console.log("user logged in successfully");
             // res.json({ message: "Tutor logged in successfully" });
-            res.redirect("/");
+            // res.redirect("/");
+            return res.json({ token });
         }
         else {
           // res.json({ message: "Incorrect Password" });

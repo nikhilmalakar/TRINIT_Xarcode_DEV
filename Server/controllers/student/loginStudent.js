@@ -6,6 +6,7 @@ const login = async (req, res) => {
     // console.log(req.body);
     try {
         const { email, password } = req.body;
+        // console.log(email, password);
         if (!email || !password) {
           // res.json({ message: "Fill all the details" });
           return res.redirect(
@@ -35,14 +36,16 @@ const login = async (req, res) => {
           existingStudent.token = token;
           existingStudent.password = undefined;
 
-          res.cookie("jwt", token, {
-            httpOnly: true,
-            maxAge: 1000 * 60 * 60 * 24 * 7,
-          });
+          // res.cookie("jwt", token, {
+          //   httpOnly: true,
+          //   maxAge: 1000 * 60 * 60 * 24 * 7,
+          // });
 
+          
           // res.json({message:"logged in succesfully"});
           console.log("user logged in successfully");
-          res.redirect("/");
+          // res.redirect("/");
+          return res.json({ token, id: existingStudent._id });
         } else {
           // res.json({ message: "Incorrect Password" });
           return res.redirect(

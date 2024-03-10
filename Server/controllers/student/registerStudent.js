@@ -33,7 +33,7 @@ const register = async (req, res) => {
         await newStudent.save();
         console.log("Student registered successfully");
         // res.json({ message: "Student registered successfully" });
-        res.redirect("/student/login");
+        // res.redirect("/student/login");
         
     }
     catch(error){
